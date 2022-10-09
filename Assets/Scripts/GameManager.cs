@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI choiceTwoText;
     public TextMeshProUGUI choiceThreeText;
 
+    public Animator AkiraAnim;
+    public Animator AllisonAnim;
+    public Animator AdrienAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,7 +62,9 @@ public class GameManager : MonoBehaviour
                 choiceTwoText.text = "Continue";
                 break;
             case 1:
+                choiceOneText.text = "Left";
                 choiceTwoText.text = "Forward";
+                choiceThreeText.text = "Right";
                 break;
         }
     }
@@ -77,6 +83,7 @@ public class GameManager : MonoBehaviour
         {
             dialogueIndex++;
             SetDialogueText();
+            WhoIsTalking();
             if (dialogueIndex == currentDialogue.Count - 1)
             {
                 SetupChoices();
@@ -94,13 +101,13 @@ public class GameManager : MonoBehaviour
         if (phaseIndex != 0)
         {
             choiceOne.SetActive(true);
-            choiceTwo.SetActive(true);
+            choiceThree.SetActive(true);
         } else
         {
             choiceOne.SetActive(false);
-            choiceTwo.SetActive(false);
+            choiceThree.SetActive(false);
         }
-        choiceThree.SetActive(true);
+        choiceTwo.SetActive(true);
     }
 
     public void CorrectChoice()
@@ -134,6 +141,7 @@ public class GameManager : MonoBehaviour
                 currentDialogue = phaseOneDialogue;
                 Akira.SetActive(true);
                 Allison.SetActive(true);
+                AkiraAnim.SetTrigger("isTalking");
                 phaseIndex = 1;
                 choiceSetWord();
                 break;
@@ -159,5 +167,17 @@ public class GameManager : MonoBehaviour
                 break;
         }
         SetDialogueText();
+    }
+
+    void WhoIsTalking()
+    {
+        if (currentDialogue[dialogueIndex].Contains("Akira: "))
+        {
+            AkiraAnim.SetTrigger("isTalking");
+        }
+        if (currentDialogue[dialogueIndex].Contains("Allison: "))
+        {
+            AllisonAnim.SetTrigger("isTalking");
+        }
     }
 }
