@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string sceneToLoad;
 
-    // Update is called once per frame
-    void Update()
+    //public = accessible to other componenets and scripts
+    //to be able to use a function on a button press, it must be public
+    public void ChangeScene()
     {
-        
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
