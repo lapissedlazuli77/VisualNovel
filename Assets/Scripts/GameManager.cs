@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
     void SetupChoices()
     {
         nextButton.SetActive(false);
-        if (phaseIndex > 0 && phaseIndex < 6)
+        if (phaseIndex > 0 && phaseIndex < 5)
         {
             choiceOne.SetActive(true);
             choiceThree.SetActive(true);
