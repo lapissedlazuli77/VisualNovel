@@ -710,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460860183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 226, y: -73, z: -3586.5}
+  m_LocalPosition: {x: 226, y: -63, z: -3586.5}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1383,7 +1383,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250, y: -42.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 215, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386607911
 MonoBehaviour:
@@ -1524,7 +1524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseZeroDialogue:
-  - Monday, January 6, 2042.
+  - Monday, December 2, 2041.
   - It's a usual full moon night in the town of Forks. But not really.
   phaseOneDialogue:
   - 'Akira: God fucking dammit, Allison, where the Hell are we?'
@@ -1532,18 +1532,53 @@ MonoBehaviour:
   - 'Allison: YOU said this was probably the right path, didn''t you?'
   - 'Akira: ...yeah? I guess?'
   - 'Allison: Guh, that fucking monster could be anywhere down here. There seems
-    to be a few tunnels up ahead though...'
+    to be a few tunnels up ahead though...They all look basically the same.'
   - 'Allison: So? Which way should we go now?'
   - 'Akira: ...'
   phaseTwoDialogue:
-  - Socks
-  - Potatoes
-  - 
-  - 
-  - 
-  phaseThreeDialogue: []
-  phaseFourDialogue: []
-  phaseFiveDialogue: []
+  - 'Akira: Alright, I *think* it''s this way...'
+  - 'Allison: I *hope* it''s this way.'
+  - 'Allison: So what was that whole thing about you running into a horde of goblins
+    this morning? Is that why you were late to class?'
+  - 'Akira: Yeah...fuckin'' things just won''t take "leave me alone" for an answer.'
+  - 'Allison: Can''t you outrun them?'
+  - 'Akira: ...'
+  phaseThreeDialogue:
+  - 'Allison: Then why didn''t you?'
+  - 'Akira: I tried, okay!?'
+  - 'Allison: Guh, anyways...'
+  - 'Allison: ...wait, have we just been going on the same path for the past few
+    minutes?'
+  - 'Akira: Crap, fuck, shit, uh, um...'
+  phaseFourDialogue:
+  - 'Allison: ...alright then.'
+  - 'Akira: Anyways, how''ve you been lately?'
+  - 'Allison: Been better. Been worse.'
+  - 'Allison: Absolutely got massacred by my Marine Bio exam, so that''s cool.'
+  - "Akira: Ugh, another three paths up ahead\u2014"
+  - 'Allison: Hold on, two of them have some kinda claw marks all along the walls...'
+  - 'Allison: Maybe that means something?'
+  - 'Akira: ...'
+  phaseFiveDialogue:
+  - 'Allison: This monster should just be up ahead.'
+  - 'Allison: You brought some shurikens this time, right?'
+  - 'Akira: What? Yeah, I didn''t forget.'
+  - 'Allison: Alright, just a bit more...'
+  phaseSixDialogue:
+  - 'Monster: SKREEEENK!'
+  - 'Akira: Well, would you look at that.'
+  - 'Allison: Guh, that thing looks a lot weirder than I expected. Well, you know
+    what to do!'
+  phaseSevenDialogue:
+  - 'Allison: Guh, not here!'
+  - 'Akira: ...should we just call Adrien to help us out?'
+  - 'Allison: ...you know what? Yeah, whatever, sure, get him over here.'
+  - 'Adrien: You could''ve just brought me along to begin with!'
+  - 'Allison: I know. I should''ve. Shut up.'
+  phaseEightDialogue:
+  - 'Allison: Guh, not here!'
+  - 'Akira: Should we go back a few tunnels or something?'
+  - 'Allison: Yeah!? I''m not just going to let this shit get away!'
   dialogueBox: {fileID: 193059806}
   Akira: {fileID: 454266470}
   Allison: {fileID: 410731250}
@@ -1557,7 +1592,7 @@ MonoBehaviour:
   choiceThreeText: {fileID: 1206049840}
   AkiraAnim: {fileID: 454266473}
   AllisonAnim: {fileID: 410731253}
-  AdrienAnim: {fileID: 0}
+  AdrienAnim: {fileID: 460860186}
 --- !u!1 &1457939453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,7 +1631,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -42.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 215, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457939455
 MonoBehaviour:
@@ -2053,7 +2088,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -250, y: -42.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 215, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144741833
 MonoBehaviour:
